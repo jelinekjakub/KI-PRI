@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="Student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="OsobniUdaje">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Email" type="xs:string"/>
+                            <xs:element name="Telefon" type="xs:string"/>
+                        </xs:sequence>
+                        <xs:attribute name="jmeno" type="xs:string" use="required"/>
+                        <xs:attribute name="prijmeni" type="xs:string" use="required"/>
+                        <xs:attribute name="studentskeCislo" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Studium">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Fakulta" type="xs:string"/>
+                            <xs:element name="StudijniRok" type="xs:integer"/>
+                            <xs:element name="Rozvrh">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Hodina" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="KodPredmetu" type="xs:string"/>
+                                                    <xs:element name="Den" type="xs:string"/>
+                                                    <xs:element name="Cas" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Predmety">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Predmet" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="kod" type="xs:string" use="required"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="SplnenePredmety">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Predmet" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="kod" type="xs:string" use="required"/>
+                                                        <xs:attribute name="znamka" type="xs:string" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="DalsiInformace">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Konicky" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

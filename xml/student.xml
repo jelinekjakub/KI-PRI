@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="../css/student.css"?>
+<Student>
+    <OsobniUdaje jmeno="Jan" prijmeni="Novák" studentskeCislo="123456">
+        <Email>jan.novak@example.com</Email>
+        <Telefon>+420 123 456 789</Telefon>
+    </OsobniUdaje>
+    <Studium>
+        <Fakulta>Informatika</Fakulta>
+        <StudijniRok>III.</StudijniRok>
+        <Rozvrh>
+            <Hodina>
+                <KodPredmetu>MATH101</KodPredmetu>
+                <Den>Pondělí</Den>
+                <Cas>09:00-10:30</Cas>
+            </Hodina>
+        </Rozvrh>
+        <Predmety>
+            <Predmet kod="PHYS101">Fyzika I</Predmet>
+        </Predmety>
+        <SplnenePredmety>
+            <Predmet kod="HIST101" znamka="A">Historie I</Predmet>
+        </SplnenePredmety>
+    </Studium>
+    <DalsiInformace>
+        <Konicky>Fotografie, Turistika</Konicky>
+    </DalsiInformace>
+</Student>

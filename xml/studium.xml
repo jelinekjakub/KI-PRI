@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/studium.xsl"?>
+<studium xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="studium.xsd">
+  <rocnik cislo="1">
+    <semestr nazev="zimni">
+      <predmet katedra="KI" kod="PGL1">
+        <nazev>Programování I</nazev>
+        <vyucujici>
+          <jmeno>Mgr. Jiří Fišer, Ph.D.</jmeno>
+          <telefon>123456789</telefon>
+          <email>jiri.fiser@example.com</email>
+        </vyucujici>
+        <kredity>5</kredity>
+        <status>A</status>
+        <zakonceni>Zápočet</zakonceni>
+      </predmet>
+      <predmet katedra="KU" kod="AJ">
+        <nazev>Anglický jazyk</nazev>
+        <vyucujici>
+          <jmeno>Mgr. Kateřina Nováková</jmeno>
+          <telefon>987654321</telefon>
+          <email>katerina.novakova@example.com</email>
+        </vyucujici>
+        <kredity>4</kredity>
+        <status>A</status>
+        <zakonceni>Zkouška</zakonceni>
+      </predmet>
+    </semestr>
+    <semestr nazev="letni">
+      <predmet katedra="KI" kod="ADS">
+        <nazev>Algoritmy a datové struktury</nazev>
+        <vyucujici>
+          <jmeno>Mgr. Květuše Sýkorová</jmeno>
+          <telefon>111222333</telefon>
+          <email>kvetuse.sykrova@example.com</email>
+        </vyucujici>
+        <kredity>2</kredity>
+        <status>A</status>
+        <zakonceni>Zápočet</zakonceni>
+      </predmet>
+    </semestr>
+  </rocnik>
+</studium>

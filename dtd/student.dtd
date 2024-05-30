@@ -1,0 +1,27 @@
+<!ELEMENT Student (OsobniUdaje, Studium, DalsiInformace)>
+<!ELEMENT OsobniUdaje (Email, Telefon)>
+<!ATTLIST OsobniUdaje
+    jmeno CDATA #REQUIRED
+    prijmeni CDATA #REQUIRED
+    studentskeCislo CDATA #REQUIRED
+>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT Telefon (#PCDATA)>
+<!ELEMENT Studium (Fakulta, StudijniRok, Rozvrh, Predmety, SplnenePredmety)>
+<!ELEMENT Fakulta (#PCDATA)>
+<!ELEMENT StudijniRok (#PCDATA)>
+<!ELEMENT Rozvrh (Hodina*)>
+<!ELEMENT Hodina (KodPredmetu, Den, Cas)>
+<!ELEMENT KodPredmetu (#PCDATA)>
+<!ELEMENT Den (#PCDATA)>
+<!ELEMENT Cas (#PCDATA)>
+<!ELEMENT Predmety (Predmet*)>
+<!ELEMENT Predmet (#PCDATA)>
+
+<!ELEMENT SplnenePredmety (Predmet*)>
+<!ATTLIST Predmet
+    kod CDATA #REQUIRED
+    znamka CDATA #IMPLIED
+>
+<!ELEMENT DalsiInformace (Konicky)>
+<!ELEMENT Konicky (#PCDATA)>

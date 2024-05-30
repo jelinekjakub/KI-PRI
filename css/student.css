@@ -1,0 +1,31 @@
+/* General styles */
+Student, OsobniUdaje, Studium, Rozvrh, Predmety, SplnenePredmety, DalsiInformace {
+    display: block;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+Student > * {
+    margin-bottom: 20px;
+}
+
+::before {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+OsobniUdaje::before { content: "Osobní údaje"; }
+Studium::before { content: "Studium"; }
+Rozvrh::before { content: "Rozvrh"; }
+Predmety::before { content: "Předměty"; }
+SplnenePredmety::before { content: "Splněné předměty"; }
+DalsiInformace::before { content: "Další informace"; }
+
+KodPredmetu, Den, Cas, Predmet, Email, Telefon, Fakulta, StudijniRok, Konicky {
+    display: block;
+    margin-bottom: 5px;
+}

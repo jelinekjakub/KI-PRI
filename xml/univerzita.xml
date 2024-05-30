@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Univerzita>
+    <Studenti>
+        <Student>
+            <Jmeno>Jan</Jmeno>
+            <Prijmeni>Novák</Prijmeni>
+            <StudentskeCislo>123456</StudentskeCislo>
+            <Email>jan.novak@example.com</Email>
+            <StudijniRok>3</StudijniRok>
+            <Rozvrh>
+                <Hodina>
+                    <KodPredmetu>MATH101</KodPredmetu>
+                    <Den>Pondělí</Den>
+                    <Cas>09:00-10:30</Cas>
+                </Hodina>
+            </Rozvrh>
+            <Predmety>
+                <Predmet>
+                    <KodPredmetu>PHYS101</KodPredmetu>
+                    <NazevPredmetu>Fyzika I</NazevPredmetu>
+                </Predmet>
+            </Predmety>
+            <SplnenePredmety>
+                <Predmet>
+                    <KodPredmetu>HIST101</KodPredmetu>
+                    <NazevPredmetu>Historie I</NazevPredmetu>
+                    <Znamka>A</Znamka>
+                </Predmet>
+            </SplnenePredmety>
+        </Student>
+    </Studenti>
+    <Fakulty>
+        <Fakulta>
+            <Dekan>Dr. Petr Svoboda</Dekan>
+            <Katedry>
+                <Katedra>
+                    <NazevKatedry>Informatika</NazevKatedry>
+                    <VedouciKatedry>Prof. Jana Kovářová</VedouciKatedry>
+                    <Zamestnanci>
+                        <Zamestnanec>
+                            <Jmeno>Ing. Pavel Nový</Jmeno>
+                            <Kontakt>pavel.novy@example.com</Kontakt>
+                            <Pozice>Odborný asistent</Pozice>
+                            <Titul>Ing.</Titul>
+                        </Zamestnanec>
+                    </Zamestnanci>
+                </Katedra>
+            </Katedry>
+        </Fakulta>
+    </Fakulty>
+</Univerzita>

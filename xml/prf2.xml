@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fakulta děkan="Prof. RNDr. Jan Novák, CSc.">
+    <katedra zkratka_katedry="KBI" webové_stránky="https://www.ujep.cz/cs/kbi">
+        <vedoucí>
+            <jméno>Doc. RNDr. Petr Svoboda, Ph.D.</jméno>
+            <telefon>+420 123 456 789</telefon>
+            <email>petr.svoboda@ujep.cz</email>
+        </vedoucí>
+        <zaměstnanci>
+            <zaměstnanec>
+                <jméno>Mgr. Jana Novotná</jméno>
+                <telefon>+420 987 654 321</telefon>
+                <email>jana.novotna@ujep.cz</email>
+                <pozice>lektor</pozice>
+            </zaměstnanec>
+        </zaměstnanci>
+        <předměty>
+            <předmět zkratka="BI101" typ="přednáška">
+                <název>Biologie pro začátečníky</název>
+                <popis>Úvod do biologie.</popis>
+            </předmět>
+        </předměty>
+    </katedra>
+</fakulta>
